@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trường THCS Mường Bám</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="img/logo.png" type="image/png">
+
+  <!-- Thẻ chia sẻ -->
+  <meta property="og:image" content="img/logo.png">
+  <meta property="og:title" content="Trường THCS Mường Bám">
+  <meta property="og:description" content="Website chính thức của trường THCS Mường Bám, huyện Thuận Châu, tỉnh Sơn La.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thcsmuongbam.edu.vn/">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #f0f4f8, #e3f2fd);
+      color: #333;
+      user-select: none;
+      -webkit-user-drag: none;
+    }
+    img {
+      pointer-events: none;
+    }
+    header {
+      background-image: url('Img/Congtruong.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100% 100%;
+      background-color: #000;
+      color: white;
+      text-align: center;
+      padding: 80px 20px 50px;
+      position: relative;
+    }
+    header::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.4);
+    }
+    header > * {
+      position: relative;
+      z-index: 1;
+    }
+    header img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      display: block;
+      margin: 0 auto;
+    }
+    header h1 {
+      margin: 25px 0 10px;
+      font-size: 38px;
+    }
+    header p {
+      font-size: 18px;
+      margin: 0;
+    }
+    nav {
+      background-color: #ffffff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      text-decoration: none;
+      color: #1976d2;
+      font-weight: 600;
+      transition: 0.3s;
+      padding: 6px 10px;
+      border-radius: 6px;
+    }
+    nav a:hover {
+      background-color: #e3f2fd;
+      color: #0d47a1;
+    }
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: white;
+      border-radius: 16px;
+      padding: 50px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    }
+    section {
+      margin-bottom: 70px;
+    }
+    section h2 {
+      color: #1565c0;
+      font-size: 28px;
+      border-left: 6px solid #1e88e5;
+      padding-left: 15px;
+      margin-bottom: 25px;
+    }
+    section img {
+      width: 100%;
+      max-height: 420px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    ul li {
+      margin-bottom: 8px;
+    }
+    iframe {
+      width: 100%;
+      height: 420px;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #dbeeff;
+      text-align: center;
+      padding: 25px;
+      color: #444;
+      font-size: 15px;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Chống copy chữ & ảnh -->
+  <script>
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+    document.addEventListener('keydown', function(e) {
+      if (
+        (e.ctrlKey && ['c', 'u', 's'].includes(e.key.toLowerCase())) ||
+        (e.ctrlKey && e.shiftKey && e.key.toLowerCase() === 'i')
+      ) {
+        e.preventDefault();
+      }
+    });
+    document.addEventListener('selectstart', function(e) {
+      e.preventDefault();
+    });
+    document.addEventListener('dragstart', function(e) {
+      e.preventDefault();
+    });
+  </script>
+
+  <header>
+    <img src="img/logo.png" alt="Logo Trường">
+    <h1>Trường THCS Mường Bám</h1>
+    <p>Huyện Thuận Châu, tỉnh Sơn La</p>
+  </header>
+
+  <nav>
+    <a href="#gioi-thieu">Giới thiệu</a>
+    <a href="#tam-nhin">Tầm nhìn & Sứ mệnh</a>
+    <a href="#co-so-vat-chat">Cơ sở vật chất</a>
+    <a href="#hoat-dong">Hoạt động</a>
+    <a href="#lien-he">Liên hệ</a>
+    <a href="#ban-do">Bản đồ</a>
+  </nav>
+
+  <main>
+    <section id="gioi-thieu">
+      <h2>Giới thiệu</h2>
+      <p>Trường THCS Mường Bám thuộc xã Mường Bám, huyện Thuận Châu, tỉnh Sơn La – một trong những địa bàn vùng cao còn nhiều khó khăn về kinh tế, giao thông và điều kiện học tập. Tuy nhiên, bằng sự tận tâm và nỗ lực không ngừng của đội ngũ cán bộ, giáo viên, nhà trường đã không ngừng vươn lên để đảm bảo quyền được học tập cho con em các dân tộc thiểu số.</p>
+      <p>Hiện nay, trường có hơn 800 học sinh với hơn 30 cán bộ, giáo viên, nhân viên. Các thầy cô không chỉ giảng dạy mà còn đồng hành, hỗ trợ, chăm lo từng bữa ăn, giấc ngủ cho học sinh bán trú. Nhiều thầy cô phải vượt hàng chục km đường rừng để đến điểm trường, mang ánh sáng tri thức về với vùng cao.</p>
+      <iframe width="560" height="315"
+		src="https://www.youtube.com/embed/h5XDaRkk7zQ"
+		title="YouTube video player"
+		frameborder="0"
+		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+		allowfullscreen>
+	  </iframe>
+    </section>
+
+    <section id="tam-nhin">
+      <h2>Tầm nhìn & Sứ mệnh</h2>
+	  <p></strong>Trường THCS Mường Bám, tọa lạc tại xã Mường Bám, huyện Thuận Châu, tỉnh Sơn La, là một ngôi trường thuộc khu vực đặc biệt khó khăn. Mặc dù vậy, nhà trường luôn nỗ lực vượt qua thử thách, hướng tới mục tiêu phát triển bền vững và nâng cao chất lượng giáo dục.<p>
+      
+	  <img src="img/z6978753835042_6cda5534de83a117b6040bbce92711dd.jpg" alt="Giới thiệu Trường THCS Mường Bám">
+	  <p><strong>Tầm nhìn:</strong> Xây dựng Trường THCS Mường Bám trở thành một đơn vị giáo dục chất lượng, thân thiện, nơi học sinh phát triển toàn diện về kiến thức, đạo đức và kỹ năng sống.</p>
+      <p><strong>Sứ mệnh:</strong> Trường THCS Mường Bám cam kết đào tạo những học sinh phát triển toàn diện về trí tuệ, thể chất và đạo đức. Nhà trường chú trọng xây dựng môi trường học tập thân thiện, khuyến khích sự sáng tạo và phát huy tiềm năng của từng học sinh, đồng thời trang bị cho các em những kỹ năng cần thiết để trở thành công dân có ích cho xã hội.</p>
+	   <p></strong>Để hiện thực hóa tầm nhìn và sứ mệnh này, trường đã nhận được sự hỗ trợ từ nhiều tổ chức và cá nhân. Đáng chú ý, vào tháng 10 năm 2021, nhà trường đã khánh thành tòa nhà 2 tầng với 8 phòng học, được tài trợ bởi Quỹ Thiện nguyện Hồng Phúc thuộc Công ty Cổ phần Địa ốc Thăng Long. Công trình này đã giúp cải thiện đáng kể cơ sở vật chất, tạo điều kiện thuận lợi cho việc dạy và học tại trường.<p>
+	    <p></strong>Với những nỗ lực không ngừng, trường THCS Mường Bám hy vọng sẽ tiếp tục nhận được sự quan tâm và hỗ trợ từ cộng đồng, nhằm thực hiện thành công các mục tiêu giáo dục đã đề ra.<p>
+    </section>
+
+    <section id="co-so-vat-chat">
+      <h2>Cơ sở vật chất</h2>
+      <p>Trường có 18 phòng học kiên cố, 1 phòng máy vi tính, 1 thư viện, 1 nhà công vụ cho giáo viên và các công trình phụ trợ phục vụ học sinh bán trú. Dù còn nhiều thiếu thốn, nhưng trường luôn tranh thủ các nguồn hỗ trợ từ Nhà nước và xã hội hóa để cải thiện điều kiện học tập.</p>
+	  
+	  <img src="img/Anh1.jpg" alt="Cơ sở vật chất">
+	  
+	  <p>Trường THCS Mường Bám nằm trên địa bàn xã vùng cao đặc biệt khó khăn của huyện Thuận Châu, tỉnh Sơn La. Trong những năm qua, nhà trường đã từng bước khắc phục khó khăn, cải thiện cơ sở vật chất phục vụ cho công tác dạy và học. Đặc biệt, năm 2021, với sự hỗ trợ từ Quỹ thiện nguyện Hồng Phúc, nhà trường đã được xây dựng mới một dãy phòng học kiên cố khang trang, góp phần đáng kể nâng cao chất lượng giáo dục.</p>
+
+	<p>Tuy nhiên, hiện nay cơ sở vật chất của nhà trường vẫn còn nhiều hạn chế:</p>
+	<p>– Một số phòng học tạm, xuống cấp, không đảm bảo an toàn trong mùa mưa bão<br>
+	– Thiếu phòng chức năng như: thư viện, phòng tin học, phòng thí nghiệm<br>
+	– Trang thiết bị dạy học còn đơn sơ, chưa đồng bộ<br>
+	– Khuôn viên trường hẹp, chưa có nhà đa năng, sân chơi thể thao, nhà vệ sinh đạt chuẩn</p>
+
+	<p>Trong bối cảnh đó, nhà trường rất mong tiếp tục nhận được sự quan tâm, hỗ trợ từ các tổ chức, cá nhân, các mạnh thường quân trong và ngoài nước để:</p>
+	<p>– Xây dựng thêm phòng học, phòng chức năng<br>
+	– Mua sắm trang thiết bị dạy học hiện đại<br>
+	– Cải tạo khuôn viên xanh – sạch – đẹp<br>
+	– Đầu tư hệ thống công nghệ thông tin, phục vụ dạy học số và chuyển đổi số trong giáo dục</p>
+
+<p>Những đóng góp của quý đơn vị không chỉ mang lại điều kiện học tập tốt hơn cho các em học sinh miền núi, mà còn là sự đầu tư đầy ý nghĩa cho tương lai của một thế hệ trẻ nơi vùng cao còn nhiều khó khăn.</p>
+
+ 
+    </section>
+
+    <section id="hoat-dong">
+      <h2>Hoạt động</h2>
+      <p>Nhà trường tổ chức nhiều hoạt động trải nghiệm, giáo dục kỹ năng sống và phát triển năng lực cá nhân:</p>
+      <ul>
+		<div style="text-align: center;">
+		  <img src="img/z5537069266875_e3f1ea9cf29aedfe3148a4684d18bd73.jpg">
+		  <div style="margin-top: px; font-size: 18px;">
+			Ngoại khóa - Tuyên truyền
+		  </div>
+		</div>
+		
+		<p>
+		<div style="text-align: center;">
+		  <img src="img/z5537068774534_11f3f8258e65437002eb0fec8c796b8f.jpg">
+		  <div style="margin-top: px; font-size: 18px;">
+			Hoạt động đoàn thanh niên
+		  </div>
+		</div>
+		
+		<p>
+		<div style="text-align: center;">
+		  <img src="img/z5537068795815_12340d84aeff5a7aa18e51e0ff1743f2.jpg">
+		  <div style="margin-top: px; font-size: 18px;">
+			Ngày hội đọc sách
+		  </div>
+		</div>
+		
+		<p>
+		<div style="text-align: center;">
+		  <img src="img/z5537068863751_53508af0b187a6ab514bc653dc35aa26.jpg">
+		  <div style="margin-top: px; font-size: 18px;">
+			Hoạt động văn hóa dân tộc
+		  </div>
+		</div>
+      </ul>
+	  
+	  <p>
+		<div style="text-align: center;">
+		  <img src="img/z5537068690072_aa3643f2a2d4f9adb4b26bc627a503ad.jpg">
+		  <div style="margin-top: px; font-size: 18px;">
+			Thi đua khen thưởng
+		  </div>
+		</div>
+      </ul>
+	 
+    </section>
+
+    <section id="lien-he">
+      <h2>Liên hệ</h2>
+      <p>🌍 <strong>Địa chỉ:</strong> Bản Nà La, xã Mường Bám, tỉnh Sơn La.</p>
+	  <p>👨‍💼 <strong>Hiệu trưởng:</strong> Đỗ Mạnh Hùng, 📞SĐT: 0963.133.488</p>
+	  <p>👤 <strong>P.Hiệu trưởng:</strong> Nguyễn Ngọc Thanh, 📞SĐT: 0974.356.386</p>
+	  <p>👤 <strong>P.Hiệu trưởng:</strong> Nguyễn Văn Khang, 📞SĐT: 0339.864.790</p>
+	  <p>📧 <strong>Email quản trị:</strong> <a href="mailto:ngoctu@thcsmuongbam.edu.vn">ngoctu@thcsmuongbam.edu.vn</a></p>
+	  <p>📞 <strong>Số điện thoại liên hệ:</strong> 0869.111.975</p>
+    </section>
+  </main>
+
+  <section id="ban-do">
+    <h2>Bản đồ vị trí trường</h2>
+    <iframe src="https://maps.google.com/maps?q=21.386786,103.404417&hl=vi&t=k&z=17&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+  <footer>
+    &copy; 2025 Trường THCS Mường Bám. Designed by Dương Ngọc Tú 💕
+  </footer>
+  
+ 
+ <div id="musicPlayer"
+  style="position: fixed; bottom: 0px; left: 50%; transform: translateX(-50%);
+         z-index: 9999; background: white; border-radius: 8px;
+         box-shadow: 0 4px 15px rgba(0,0,0,0.2); padding: 5px 10px;
+         display: flex; align-items: center; justify-content: space-between;
+         opacity: 0.5; transition: opacity 0.3s; width: 90%; height: 25px;">
+  
+  <button id="prevBtn" style="margin-left: 10px; margin-right: 8px;">⏮</button>
+  
+  <audio id="nhacnen" controls style="height: 25px;width: 70%; left:5%">
+    <source id="nguonnhac" src="" type="audio/mpeg">
+    Trình duyệt không hỗ trợ audio.
+  </audio>
+  
+  <button id="nextBtn" style="margin-left: 10px;Left:10">⏭</button>
+  
+  <ul id="playlist" style="list-style: none; margin: 0; padding: 0 0 0 20px;
+       max-height: 100px; overflow-y: auto; font-size: 16px; height: 25px; width: 30%">
+  </ul>
+</div>
+
+<script>
+  const playlist = [
+    {
+      name: "Mường Bám Yêu Thương",
+      url: "https://raw.githubusercontent.com/ngoctuk50/music/main/M%C6%B0%E1%BB%9Dng%20B%C3%A1m%20Y%C3%AAu%20Th%C6%B0%C6%A1ng.mp3"
+    },
+    {
+      name: "Tuổi trẻ Mường Bám",
+      url: "https://raw.githubusercontent.com/ngoctuk50/music/main/DNT%20-%20THCS%20M%C6%B0%E1%BB%9Dng%20B%C3%A1m.mp3"
+    }
+  ];
+
+  let currentIndex = 0;
+  const audio = document.getElementById("nhacnen");
+  const source = document.getElementById("nguonnhac");
+  const playlistEl = document.getElementById("playlist");
+
+  function playCurrentSong() {
+    source.src = playlist[currentIndex].url;
+    audio.load();
+    audio.play();
+    updatePlaylistUI();
+  }
+
+  function updatePlaylistUI() {
+    playlistEl.innerHTML = "";
+    playlist.forEach((song, index) => {
+      const li = document.createElement("li");
+      li.textContent = (index === currentIndex ? "🔊 " : "") + song.name;
+      li.style.cursor = "pointer";
+      li.onclick = () => {
+        currentIndex = index;
+        playCurrentSong();
+      };
+      playlistEl.appendChild(li);
+    });
+  }
+
+  document.getElementById("nextBtn").onclick = () => {
+    currentIndex = (currentIndex + 1) % playlist.length;
+    playCurrentSong();
+  };
+
+  document.getElementById("prevBtn").onclick = () => {
+    currentIndex = (currentIndex - 1 + playlist.length) % playlist.length;
+    playCurrentSong();
+  };
+
+  audio.addEventListener("ended", () => {
+    currentIndex = (currentIndex + 1) % playlist.length;
+    playCurrentSong();
+  });
+
+  // Phát nhạc sau khi có tương tác
+  document.addEventListener("click", () => {
+    if (!audio.src) playCurrentSong();
+  }, { once: true });
+
+  // Hover effect: làm rõ khi trỏ chuột vào
+  const musicPlayer = document.getElementById("musicPlayer");
+  musicPlayer.addEventListener("mouseenter", () => {
+    musicPlayer.style.opacity = "1";
+  });
+  musicPlayer.addEventListener("mouseleave", () => {
+    musicPlayer.style.opacity = "0.5";
+  });
+</script>
+
+
+
+	
+	<!-- hoa lá cành -->
+	<style>
+  .falling-item {
+    position: fixed;
+    top: -60px;
+    font-weight: bold;
+    color: red;
+    font-size: 28px;
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.3);
+    animation: fall linear infinite;
+    z-index: 9998;
+    pointer-events: none;
+    opacity: 0.7;
+  }
+
+  .falling-star {
+    color: gold;
+    text-shadow: 0 0 8px yellow;
+  }
+  .falling-firework {
+    color: #ffcc00;
+    text-shadow: 0 0 10px orange;
+  }
+  .falling-heart {
+    color: red; /* hồng cute */
+    text-shadow: 0 0 6px red;
+  }
+  
+	
+  @keyframes fall {
+    to {
+      transform: translateY(110vh) rotate(360deg);
+    }
+  }
+</style>
+
+<script>
+  const numberOfItems = 25;
+  const values = ['💯' , '💖', '❤️' , '🌟' , '💫' , '★' ,'✨' ,'💞' ,'🏆' ,'🥇' ,'🎖️' ,'🧑‍🎓' ,'👩‍🎓' ,'🎓'];
+
+  for (let i = 0; i < numberOfItems; i++) {
+    const item = document.createElement('div');
+    const value = values[Math.floor(Math.random() * values.length)];
+
+    item.classList.add('falling-item');
+	item.classList.add('falling-star');
+    if (['💯' , '💖', '❤️' ,'💞'].includes(value)) {
+      item.classList.add('falling-heart');
+    }
+
+    item.textContent = value;
+
+    // 📌 Chỉ rơi ở 2 bên: 0–30vw (trái) hoặc 70–100vw (phải)
+    let leftPercent;
+    if (Math.random() < 0.5) {
+      leftPercent = -4 + Math.random() * 12; // 0–30
+    } else {
+      leftPercent = 88 + Math.random() * 12; // 70–100
+    }
+
+    item.style.left = leftPercent + 'vw';
+    item.style.animationDuration = (3 + Math.random() * 3) + 's';
+    item.style.fontSize = (20 + Math.random() * 20) + 'px';
+
+    document.body.appendChild(item);
+  }
+</script>
+
+
+
+  
+</body>
+</html>
+
+
+
